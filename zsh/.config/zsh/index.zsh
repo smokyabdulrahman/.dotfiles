@@ -1,4 +1,4 @@
-source $HOME/.config/zsh/p10k.zsh
+source $HOME/.config/zsh/starship.zsh
 source $HOME/.config/zsh/aliases.zsh
 
 
