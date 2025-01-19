@@ -9,6 +9,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 export XDG_CONFIG_HOME=$HOME/.config
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 ZSH_THEME="robbyrussell"
 
