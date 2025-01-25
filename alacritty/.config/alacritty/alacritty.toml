@@ -76,6 +76,8 @@ bindings = [
   {key = "P", mods = "Command|Shift", chars = "alacritty -e 'htop' & \r"},
   {key = "I", mods = "Command|Shift", chars = "alacritty -e 'ipython' & \r"},
   {key = "N", mods = "Command", action = "CreateNewWindow"},
+  # To avoid some problems in aerospace detecting tabs as new windows
+  {key = "T", mods = "Command", action = "CreateNewWindow"},
   {key = "Right", mods = "Alt", chars = "\u001BF" },
   {key = "Left",  mods = "Alt", chars = "\u001BB" },
 ]
