@@ -37,3 +37,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 
 source $HOME/.config/zsh/index.zsh
+source ~/.bash_profile;
