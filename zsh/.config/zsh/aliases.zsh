@@ -9,6 +9,7 @@ alias zshr='source ~/.zshrc'
 alias ll='ls -al'
 
 # git stuff
+alias gcl='git clone'
 alias gst='git status'
 
 alias gc='git commit -m'
