@@ -1,0 +1,8 @@
+name: poetry project
+root: <%= @args[0] %>
+
+windows:
+  - code:
+    - poetry run nvim .
+  - cmd:
+    - poetry shell
