@@ -1,0 +1,23 @@
+{
+  "preferredNotifChannel": "terminal_bell",
+  "ignorePatterns": [
+    ".git/**", // internal Git files – never useful to the model
+    "node_modules/"
+  ],
+  "paths": {
+    "allowedDirectories": [
+      "/Users/aalrahma/personal/",
+      "/Users/aalrahma/work/"
+    ],
+    "excludedPatterns": [
+      "**/.git/**",
+      "**/node_modules/",
+      "**/*.env",
+      "**/*.key",
+      "**/*.pem",
+      "**/*.secret",
+      "**/password*",
+      "**/credentials*"
+    ]
+  }
+}
