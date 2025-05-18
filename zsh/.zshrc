@@ -12,6 +12,9 @@ export PATH=/opt/homebrew/bin:$PATH
 export XDG_CONFIG_HOME=$HOME/.config
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
+# For autocomplete
+fpath=("$XDG_CONFIG_HOME/zsh/completions/" $fpath)
+
 ZSH_THEME="robbyrussell"
 
 
@@ -26,10 +29,10 @@ fi
 
 
 # Created by `pipx` on 2024-01-21 09:28:16
-export PATH="$PATH:/Users/aalrahma/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # bun completions
-[ -s "/Users/aalrahma/.bun/_bun" ] && source "/Users/aalrahma/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"

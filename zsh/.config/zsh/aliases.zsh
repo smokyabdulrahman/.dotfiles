@@ -2,6 +2,11 @@
 alias wrk="cd ~/work"
 alias crpr="gh pr create"
 
+# docker
+alias dps='docker ps --format "table {{.ID}}\\t{{.Image}}\\t{{.Status}}\\t{{.Names}}"'
+alias dcu='docker compose up -d'
+alias dcd='docker compose down'
+
 # zsh
 alias zshr='source ~/.zshrc'
 
