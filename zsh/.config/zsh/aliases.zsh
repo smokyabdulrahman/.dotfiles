@@ -1,4 +1,5 @@
 # personal
+alias vim="nvim"
 alias wrk="cd ~/work"
 alias crpr="gh pr create"
 
