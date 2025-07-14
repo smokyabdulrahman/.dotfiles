@@ -1,0 +1,21 @@
+{
+  "fileFiltering": {
+    "respectGitIgnore": true,
+    "enableRecursiveFileSearch": true
+  },
+  "selectedAuthType": "oauth-personal",
+  "theme": "Dracula",
+  "preferredEditor": "vim",
+  "mcpServers": {
+    "logfire": {
+      "command": "uvx",
+      "args": [
+        "logfire-mcp@latest"
+      ],
+      "type": "stdio",
+      "env": {
+        "LOGFIRE_READ_TOKEN": "pylf_v1_eu_S6MRMvxRvkftFwPQcy212wHJQ8WmNQmhKh597C8d2jtc"
+      }
+    }
+  }
+}
