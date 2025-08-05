@@ -10,6 +10,5 @@ root: <%= @args[0] %>
 
 windows:
   - code:
-    - poetry run nvim .
+    - uv run nvim .
   - cmd:
-    - poetry shell

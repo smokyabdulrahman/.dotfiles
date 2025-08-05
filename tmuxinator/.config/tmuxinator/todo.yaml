@@ -1,0 +1,21 @@
+name: todo
+root: ~/
+startup_pane: 6
+enable_pane_titles: true
+pane_title_format: "#{pane_title}"
+
+windows:
+  - todo:
+      layout: ff13,165x42,0,0{45x42,0,0,45,119x42,46,0[119x39,46,0{63x39,46,0,46,55x39,110,0[55x14,110,0,47,55x12,110,15,48,55x11,110,28,49]},119x2,46,40,50]}
+      panes:
+        - upcoming: 
+          - watch t lsp c-d
+        - today: 
+          - watch t lsp a-b
+        - today_mawj: 
+          - watch t lsp a-b @mawj
+        - today_stream:
+          - watch t lsp a-b @stream
+        - today_house:
+          - watch t lsp a-b @house
+        - cmd:

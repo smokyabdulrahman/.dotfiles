@@ -2,6 +2,14 @@
 alias vim="nvim"
 alias wrk="cd ~/work"
 alias crpr="gh pr create"
+# alias watch to expand other aliases before calling watch
+# which runs the commands in a /bin/sh that doesn't know
+# about the defined aliases in zsh
+alias watch="watch -c -t "
+
+# todo.txt
+alias t="todo.sh"
+alias tls="t ls"
 
 # docker
 alias dps='docker ps --format "table {{.ID}}\\t{{.Image}}\\t{{.Status}}\\t{{.Names}}"'

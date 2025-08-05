@@ -7,3 +7,4 @@ windows:
   - nvim:
     - cd nvim/.config/nvim
     - nvim .
+  - cmd:
