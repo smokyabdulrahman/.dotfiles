@@ -1,7 +1,7 @@
 # personal
 alias vim="nvim"
 alias wrk="cd ~/work"
-alias crpr="gh pr create"
+alias crpr="gh pr create --fill-first"
 # alias watch to expand other aliases before calling watch
 # which runs the commands in a /bin/sh that doesn't know
 # about the defined aliases in zsh
