@@ -1,2 +1,3 @@
 ANTHROPIC_MODEL='claude-3-5-haiku-20241022'
 ANTHROPIC_SMALL_FAST_MODEL='claude-3-haiku-20240307'
+DOCKER_HOST="unix://${XDG_CONFIG_HOME}/default/docker.sock"
