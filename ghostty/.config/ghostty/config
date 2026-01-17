@@ -1,11 +1,11 @@
 macos-titlebar-style = hidden
-font-size = 24
+font-size = 20
 
 # TOKYONIGHT THEME
 # Window settings
-window-padding-x = 14
-window-padding-y = 14
-window-decoration = false
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = true
 background-opacity = 0.98
 
 # Terminal settings
