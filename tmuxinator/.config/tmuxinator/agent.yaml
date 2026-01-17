@@ -1,0 +1,19 @@
+# Set var "WDIR" to workdir
+<% if @args[0] %>
+<% WDIR=@args[0] %> 
+<% else %>
+<% WDIR=ENV["PWD"] %>
+<% end %>
+
+name: <%= WDIR.split('/').last  %>-agent
+root: <%= @args[0] %>
+startup_pane: 0
+
+windows:
+  - todo:
+      layout: ab54,137x33,0,0{88x33,0,0[88x25,0,0,4,88x7,0,26,7],48x33,89,0,6}
+      panes:
+        - code: 
+        - cli:
+        - agent:
+          - opencode

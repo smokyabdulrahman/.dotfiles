@@ -9,7 +9,7 @@ window-decoration = false
 background-opacity = 0.98
 
 # Terminal settings
-term = xterm-256color
+# term = xterm-256color
 
 # Color scheme from omarchy theme
 background = 1a1b26
