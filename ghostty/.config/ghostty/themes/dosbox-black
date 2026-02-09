@@ -1,0 +1,45 @@
+# dosbox-black Ghostty Theme
+# Generated based on the dosbox-black vim colorscheme
+
+background = #000000
+foreground = #b1b2b9
+cursor-color = #b1b2b9
+cursor-text = #000000
+selection-background = #333333
+selection-foreground = #b1b2b9
+
+# Palette Mapping
+# Black (mapped from ColorColumn/CursorLine background)
+palette = 0=#1a1a1a
+# Red (mapped from Comment)
+palette = 1=#d04863
+# Green (mapped from Type)
+palette = 2=#eaf0e5
+# Yellow (mapped from Special)
+palette = 3=#f7ce82
+# Blue (mapped from Number)
+palette = 4=#7c80f8
+# Magenta (mapped from Conditional)
+palette = 5=#fef5fd
+# Cyan (mapped from String)
+palette = 6=#3fb6a6
+# White (mapped from Normal Foreground)
+palette = 7=#b1b2b9
+
+# Bright Variants
+# Bright Black (mapped from LineNr/NonText)
+palette = 8=#616161
+# Bright Red
+palette = 9=#d04863
+# Bright Green
+palette = 10=#eaf0e5
+# Bright Yellow
+palette = 11=#f7ce82
+# Bright Blue
+palette = 12=#7c80f8
+# Bright Magenta
+palette = 13=#fef5fd
+# Bright Cyan
+palette = 14=#3fb6a6
+# Bright White (mapped from Statement)
+palette = 15=#f5fef8
