@@ -1,0 +1,17 @@
+[push]
+    autoSetupRemote = true
+
+[includeIf "gitdir:~/work/stream/"]
+	path = config-stream
+
+[includeIf "gitdir:~/work/mawj/"]
+	path = config-mawj
+
+[includeIf "gitdir:~/personal/"]
+	path = config-personal
+
+[includeIf "gitdir:~/.dotfiles/"]
+	path = config-personal
+
+[core]
+    pager = diffnav

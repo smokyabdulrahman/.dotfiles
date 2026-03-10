@@ -41,3 +41,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 source $HOME/.config/zsh/index.zsh
 source ~/.bash_profile;
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi

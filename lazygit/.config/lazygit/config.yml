@@ -1,3 +1,6 @@
 services:
   'gh_personal': 'github:github.com'
   'gh_work': 'github:github.com'
+git:
+  pagers:
+    - pager: delta --dark --paging=never
