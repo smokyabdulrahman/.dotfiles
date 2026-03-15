@@ -13,5 +13,7 @@
 [includeIf "gitdir:~/.dotfiles/"]
 	path = config-personal
 
-[core]
-    pager = diffnav
+# [core]
+#     pager = diffnav
+[merge]
+	tool = nvimdiff

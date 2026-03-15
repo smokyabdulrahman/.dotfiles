@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+dir="${1:-$(pwd)}"
+
+tmux new-window -n "$(basename $dir)" -c "$dir" \; \
+  split-window -h -c "$dir" -l 75% \; \
+  send-keys 'uv run nvim .' Enter \; \
+  select-pane -L
