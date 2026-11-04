@@ -1,0 +1,33 @@
+#!/bin/sh
+# Create the uv layout: a code tab (uv run nvim .) and a cmd tab (shell).
+# Usage: rex-uv [project-directory]
+set -eu
+
+if [ "$#" -eq 1 ] && { [ "$1" = "--help" ] || [ "$1" = "-h" ]; }; then
+  printf 'Usage: rex-uv [project-directory]\nDefaults to the current directory. Creates a new Rex session.\n'
+  exit 0
+fi
+
+if [ "$#" -gt 1 ]; then
+  printf 'Usage: rex-uv [project-directory]\n' >&2
+  exit 1
+fi
+
+for dependency in rex jq uv nvim; do
+  if ! command -v "$dependency" >/dev/null 2>&1; then
+    printf 'rex-uv: required command not found: %s\n' "$dependency" >&2
+    exit 1
+  fi
+done
+
+dir=$(CDPATH= cd -- "${1:-$PWD}" && pwd)
+created=$(rex new "$(basename "$dir")" \
+  --cwd "$dir" --window code --json -- uv run nvim .)
+session=$(printf '%s' "$created" | jq -er '.session_id')
+
+rex window new -s "$session" cmd --cwd "$dir" --focus=false
+
+printf 'Created uv layout for %s (%s)\n' "$dir" "$session"
+if ! rex do session.select session_id="$session"; then
+  printf 'Session created, but could not select it in Rex.app. Open it in the session picker.\n' >&2
+fi

@@ -44,3 +44,14 @@ source ~/.bash_profile;
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
 eval "$(fnm env --use-on-cd --shell zsh)"
+
+# opencode
+export PATH="$HOME/.opencode/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  ":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end

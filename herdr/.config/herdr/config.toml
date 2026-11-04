@@ -1,0 +1,41 @@
+# Herdr equivalents for the tmux workflow in this dotfiles repository.
+
+#[theme]
+#name = "terminal"
+
+[terminal]
+# New panes and tabs inherit the focused pane's working directory.
+new_cwd = "follow"
+
+[keys]
+prefix = "ctrl+a"
+
+# Vim-like pane and tab navigation.
+last_pane = "prefix+^"
+
+navigate_workspace_down = "j"
+navigate_workspace_up = "k"
+
+navigate_pane_left = "shift+h"
+navigate_pane_down = "shift+j"
+navigate_pane_up = "shift+k"
+navigate_pane_right = "shift+l"
+
+# Match tmux's % side-by-side split and " stacked split.
+split_vertical = "prefix+%"
+split_horizontal = 'prefix+"'
+new_tab = "prefix+c"
+
+# Keep tmux's reload key and move Herdr's resize mode out of its way.
+reload_config = "prefix+r"
+resize_mode = "prefix+shift+r"
+
+[ui]
+# Approximate tmux's compact, bottom-aligned status bar and pane dividers.
+tab_bar_position = "bottom"
+pane_outer_borders = false
+pane_scrollbars = false
+pane_gaps = false
+tab_bar_right = [
+  { type = "command", command = "prayer-times next --format full", interval_seconds = 30, timeout_seconds = 5 },
+]
