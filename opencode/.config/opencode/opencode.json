@@ -2,6 +2,10 @@
   "$schema": "https://opencode.ai/config.json",
   "snapshot": false,
   "mcp": {
+    "metabase": {
+      "type": "remote",
+      "url": "https://metabase-759457779399.me-central2.run.app/api/metabase-mcp"
+    },
     "logfire": {
       "type": "remote",
       "url": "https://logfire-eu.pydantic.dev/mcp"
@@ -9,6 +13,17 @@
     "linear": {
       "type": "remote",
       "url": "https://mcp.linear.app/mcp"
+    }
+  },
+  "plugins": [
+    "file:///opt/homebrew/opt/opencode-with-claude/libexec/lib/node_modules/opencode-with-claude/dist/index.js"
+  ],
+  "providers": {
+    "anthropic": {
+      "settings": {
+        "baseURL": "http://127.0.0.1:3456/v1",
+        "apiKey": "dummy"
+      }
     }
   }
 }
