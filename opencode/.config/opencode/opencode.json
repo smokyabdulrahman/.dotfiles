@@ -16,7 +16,7 @@
     }
   },
   "plugins": [
-    "file:///opt/homebrew/opt/opencode-with-claude/libexec/lib/node_modules/opencode-with-claude/dist/index.js"
+    "file:///opt/homebrew/opt/opencode-with-claude/libexec/lib/node_modules/opencode-with-claude/dist"
   ],
   "providers": {
     "anthropic": {
